@@ -4,6 +4,7 @@ import { categoryLabels, GITHUB_USER } from '../data/profile';
 import { useRepoStats } from '../lib/github';
 import { getProject } from '../lib/content';
 import { usePageTitle } from '../lib/usePageTitle';
+import HirakuPage from './HirakuPage';
 
 export default function ProjectPage() {
   const { slug = '' } = useParams<{ slug: string }>();
@@ -11,6 +12,7 @@ export default function ProjectPage() {
   const stats = useRepoStats();
   usePageTitle(project?.title ?? 'Projeto não encontrado');
 
+  if (slug === 'hiraku-comic-manager') return <HirakuPage />;
   if (!project) return <div className="w proj"><h1>Projeto não encontrado</h1><Link to="/">Voltar</Link></div>;
   const s = stats[project.repo];
 
