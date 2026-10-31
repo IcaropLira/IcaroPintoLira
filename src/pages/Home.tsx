@@ -1,5 +1,6 @@
 import { useMemo, useState, type CSSProperties } from 'react';
 import { Link } from 'react-router-dom';
+import AchievementsSection from '../components/AchievementsSection';
 import Markdown from '../components/Markdown';
 import ProjectCard from '../components/ProjectCard';
 import Reveal from '../components/Reveal';
@@ -74,11 +75,13 @@ export default function Home() {
     <>
       <Hero />
 
-      {/* 01 — SETUP */}
+      <AchievementsSection />
+
+      {/* 02 — SETUP */}
       <section id="setup">
         <div className="w">
           <Reveal>
-            <div className="k">01 — setup</div>
+            <div className="k">02 — setup</div>
             <h2>Meu ambiente, <em>do meu jeito.</em></h2>
             <p className="lead">Vim, Neovim, terminal e tmux configurados para escrever código sem tirar a mão do teclado.</p>
             <div className="setup">
@@ -97,11 +100,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 02 — DESTAQUES (Projetos Masters / Aplicações Complexas) */}
+      {/* 03 — DESTAQUES (Projetos Masters / Aplicações Complexas) */}
       <section id="destaques">
         <div className="w">
           <Reveal>
-            <div className="k">02 — destaques</div>
+            <div className="k">03 — destaques</div>
             <h2>Projetos <em>em destaque.</em></h2>
             <p className="lead">Aplicações completas e projetos de maior complexidade desenvolvidos de ponta a ponta.</p>
             <div className="two">
@@ -115,11 +118,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 03 — BIBLIOTECA (Mr. C++) */}
+      {/* 04 — BIBLIOTECA (Mr. C++) */}
       <section id="mrcpp">
         <div className="w">
           <Reveal>
-            <div className="k">03 — biblioteca</div>
+            <div className="k">04 — biblioteca</div>
             <h2>Mr. C++ — <em>biblioteca de algoritmos.</em></h2>
             <p className="lead">
               Biblioteca completa de algoritmos e estruturas de dados em C++ para maratonas de programação competitiva, com documentação interativa.
@@ -214,12 +217,12 @@ int main() {
         </div>
       </section>
 
-      {/* 04 — COMPETITIVA */}
+      {/* 05 — COMPETITIVA */}
       <section id="competitiva">
         <div id="projetos" />
         <div className="w">
           <Reveal>
-            <div className="k">04 — competitiva</div>
+            <div className="k">05 — competitiva</div>
             <h2>Programação <em>competitiva.</em></h2>
             <p className="lead">
               Extensões e utilitários criados para enriquecer o treinamento e a resolução de problemas em judges online.

@@ -8,6 +8,7 @@ export default function Layout() {
         <div className="w">
           <Link className="brand" to="/"><img src="/assets/hsm-logo.svg" alt="Logo Hiraku" />Ícaro Lira</Link>
           <nav>
+            <a href="/conquistas">Conquistas</a>
             <a href="/#setup">Setup</a>
             <a href="/#destaques">Destaques</a>
             <a href="/#mrcpp">Mr. C++</a>
