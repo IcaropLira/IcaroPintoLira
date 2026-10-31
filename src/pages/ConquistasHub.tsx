@@ -17,8 +17,8 @@ export default function ConquistasHub() {
 
   const featured = featuredAchievement();
   const categories = useMemo(() => [...new Set(achievements.map((a) => a.category))], []);
-  const medals = achievements.filter((a) => a.medal).length;
-  const latest = Math.max(...achievements.map((a) => a.year));
+  //const medals = achievements.filter((a) => a.medal).length;
+  //const latest = Math.max(...achievements.map((a) => a.year));
 
   // Com o filtro "todas", o destaque aparece grande no topo e sai da grade.
   const showFeature = filter === 'todas' && !!featured;
