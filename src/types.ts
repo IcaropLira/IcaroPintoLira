@@ -13,6 +13,12 @@ export interface Project {
   stack: string[];
   body: string;
   website?: string;
+  /** Mostra os instaladores da release mais recente do GitHub. */
+  releases: boolean;
+  /** Arquivo .repo do dnf (Fedora), se houver. */
+  dnfRepo?: string;
+  /** Nome do pacote no dnf e do binário instalado. */
+  packageName?: string;
 }
 
 export interface RepoStats {

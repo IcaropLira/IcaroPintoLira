@@ -128,6 +128,7 @@ function fetchLatest(repo: string): Promise<ReleaseState> {
 export function useLatestRelease(repo: string): ReleaseState {
   const [state, setState] = useState<ReleaseState>({ status: 'loading' });
   useEffect(() => {
+    if (!repo) return undefined; // projeto sem releases: nada a buscar
     let alive = true;
     void fetchLatest(repo).then((s) => { if (alive) setState(s); });
     return () => { alive = false; };
