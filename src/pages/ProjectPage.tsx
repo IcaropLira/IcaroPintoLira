@@ -11,7 +11,6 @@ export default function ProjectPage() {
   const project = getProject(slug);
   const stats = useRepoStats();
 
-  if (slug === 'hiraku-comic-manager') return <HirakuPage />;
   const projectImage = project?.logo ? `/assets/${project.logo}` : '/assets/icaro-pinto-lira.jpg';
   usePageTitle(project?.title ?? 'Projeto não encontrado', {
     path: `/projetos/${slug}`,
@@ -31,6 +30,7 @@ export default function ProjectPage() {
     } : undefined
   });
 
+  if (slug === 'hiraku-comic-manager') return <HirakuPage />;
   if (!project) return <div className="w proj"><h1>Projeto não encontrado</h1><Link to="/">Voltar</Link></div>;
   const s = stats[project.repo];
 
