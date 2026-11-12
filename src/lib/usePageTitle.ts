@@ -78,7 +78,6 @@ export function usePageTitle(title: string, seo: PageSEO = {}): void {
         contentUrl: image,
         caption: imageAlt,
         representativeOfPage: true,
-        creator: { '@id': PERSON_ID }
       },
       ...(seo.structuredData ? { mainEntity: seo.structuredData } : {})
     };
