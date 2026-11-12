@@ -36,7 +36,7 @@ function Hero() {
         <div className="avatar up" style={{ '--d': 0 } as CSSProperties}>
           <div className="orbit"><Sparkle size={18} /></div>
           <img src="/assets/icaro-pinto-lira.jpg" width={400} height={400} fetchPriority="high"
-            alt="Ícaro Pinto Lira, estudante de Ciência da Computação da UFCG" />
+            alt="Retrato de Ícaro Pinto Lira, estudante de Ciência da Computação da Universidade Federal de Campina Grande" />
         </div>
         <div className="tag up" style={{ '--d': 1 } as CSSProperties}>~/icaro $ whoami</div>
         <h1 className="up" style={{ '--d': 2 } as CSSProperties}>Ícaro <em>Pinto Lira</em></h1>
@@ -53,7 +53,12 @@ function Hero() {
 }
 
 export default function Home() {
-  usePageTitle('Ciência da Computação, UFCG');
+  usePageTitle('Início', {
+    path: '/',
+    description: 'Portfólio oficial de Ícaro Pinto Lira, estudante de Ciência da Computação na UFCG: projetos de software, programação competitiva, medalha na OPI 2026 e ferramentas autorais.',
+    image: '/assets/icaro-pinto-lira.jpg',
+    imageAlt: 'Retrato de Ícaro Pinto Lira, estudante de Ciência da Computação da UFCG'
+  });
   const stats = useRepoStats();
   const [filter, setFilter] = useState<Filter>('competitiva');
 
@@ -74,10 +79,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-
       <AchievementsSection />
-
-      {/* 02 — SETUP */}
       <section id="setup">
         <div className="w">
           <Reveal>
@@ -90,8 +92,7 @@ export default function Home() {
                   <Link className={`s${p.highlight ? ' all' : ''}`} to={`/projetos/${p.slug}`}>
                     {p.highlight && <i className="badge">tudo em um</i>}
                     <img src={`/assets/${p.logo}`} alt={`Logo de ${p.title}`} />
-                    <b>{p.title}</b>
-                    <span>{p.repo}</span>
+                    <b>{p.title}</b><span>{p.repo}</span>
                   </Link>
                 </div>
               ))}
@@ -99,8 +100,6 @@ export default function Home() {
           </Reveal>
         </div>
       </section>
-
-      {/* 03 — DESTAQUES (Projetos Masters / Aplicações Complexas) */}
       <section id="destaques">
         <div className="w">
           <Reveal>
@@ -117,77 +116,31 @@ export default function Home() {
           </Reveal>
         </div>
       </section>
-
-      {/* 04 — BIBLIOTECA (Mr. C++) */}
       <section id="mrcpp">
         <div className="w">
           <Reveal>
             <div className="k">04 — biblioteca</div>
             <h2>Mr. C++ — <em>biblioteca de algoritmos.</em></h2>
-            <p className="lead">
-              Biblioteca completa de algoritmos e estruturas de dados em C++ para maratonas de programação competitiva, com documentação interativa.
-            </p>
-
+            <p className="lead">Biblioteca completa de algoritmos e estruturas de dados em C++ para maratonas de programação competitiva, com documentação interativa.</p>
             <div className="mrcpp-banner">
               <div className="mrcpp-left">
                 <div className="mrcpp-header">
-                  <div className="mrcpp-logo-wrap">
-                    <img src="/assets/mrcpp-logo.svg" alt="Logo Mr. C++" className="mrcpp-logo" />
-                  </div>
+                  <div className="mrcpp-logo-wrap"><img src="/assets/mrcpp-logo.svg" alt="Logo Mr. C++" className="mrcpp-logo" /></div>
                   <div>
-                    <div className="mrcpp-badge-row">
-                      <span className="badge">✦ Minha Lib</span>
-                      <span className="badge badge-sub">C++17 · Programação Competitiva</span>
-                    </div>
-                    <h3 className="mrcpp-title">Mr. C++</h3>
-                    <div className="mrcpp-repo">IcaropLira/MrCpp {stats['MrCpp'] ? `· ★ ${stats['MrCpp'].stars}` : ''}</div>
+                    <div className="mrcpp-badge-row"><span className="badge">✦ Minha Lib</span><span className="badge badge-sub">C++17 · Programação Competitiva</span></div>
+                    <h3 className="mrcpp-title">Mr. C++</h3><div className="mrcpp-repo">IcaropLira/MrCpp {stats['MrCpp'] ? `· ★ ${stats['MrCpp'].stars}` : ''}</div>
                   </div>
                 </div>
-
-                <p className="mrcpp-desc">
-                  Acervo abrangente de implementações eficientes baseadas no <em>Competitive Programmer's Handbook</em>:
-                  Segment Tree, Fenwick, Lazy Propagation, Grafos, Árvores (LCA, Euler Tour), Programação Dinâmica e Algoritmos de Strings (KMP, Z-algo, Aho-Corasick). Acesso rápido com busca instantânea e snippets prontos para maratonas.
-                </p>
-
-                <div className="mrcpp-tags">
-                  <span>C++17</span>
-                  <span>Segment Tree & Lazy</span>
-                  <span>Grafos & LCA</span>
-                  <span>DP Avançada</span>
-                  <span>Strings (KMP/Z)</span>
-                  <span>Docs Interativas</span>
-                </div>
-
+                <p className="mrcpp-desc">Acervo abrangente de implementações eficientes baseadas no <em>Competitive Programmer's Handbook</em>: Segment Tree, Fenwick, Lazy Propagation, Grafos, Árvores (LCA, Euler Tour), Programação Dinâmica e Algoritmos de Strings (KMP, Z-algo, Aho-Corasick). Acesso rápido com busca instantânea e snippets prontos para maratonas.</p>
+                <div className="mrcpp-tags"><span>C++17</span><span>Segment Tree & Lazy</span><span>Grafos & LCA</span><span>DP Avançada</span><span>Strings (KMP/Z)</span><span>Docs Interativas</span></div>
                 <div className="mrcpp-actions">
-                  <a
-                    className="btn p"
-                    href="https://mrcpp.vercel.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Entrar no Mr. C++ ↗
-                  </a>
-                  <a
-                    className="btn"
-                    href="https://github.com/IcaropLira/MrCpp"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Ver no GitHub ↗
-                  </a>
-                  <Link className="btn btn-ghost" to="/projetos/mrcpp">
-                    Ver detalhes →
-                  </Link>
+                  <a className="btn p" href="https://mrcpp.vercel.app/" target="_blank" rel="noopener noreferrer">Entrar no Mr. C++ ↗</a>
+                  <a className="btn" href="https://github.com/IcaropLira/MrCpp" target="_blank" rel="noopener noreferrer">Ver no GitHub ↗</a>
+                  <Link className="btn btn-ghost" to="/projetos/mrcpp">Ver detalhes →</Link>
                 </div>
               </div>
-
               <div className="mrcpp-preview">
-                <div className="mrcpp-preview-header">
-                  <span className="dot red" />
-                  <span className="dot yellow" />
-                  <span className="dot green" />
-                  <span className="mrcpp-url-pill">mrcpp.vercel.app</span>
-                </div>
+                <div className="mrcpp-preview-header"><span className="dot red" /><span className="dot yellow" /><span className="dot green" /><span className="mrcpp-url-pill">mrcpp.vercel.app</span></div>
                 <div className="mrcpp-preview-body">
                   <div className="mrcpp-snippet-title">// Algoritmos & Estruturas para Maratonas</div>
                   <pre><code>{`#include <bits/stdc++.h>
@@ -202,47 +155,31 @@ int main() {
     // -> mrcpp.vercel.app
     return 0;
 }`}</code></pre>
-                  <a
-                    href="https://mrcpp.vercel.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mrcpp-preview-link"
-                  >
-                    Acessar mrcpp.vercel.app ↗
-                  </a>
+                  <a href="https://mrcpp.vercel.app/" target="_blank" rel="noopener noreferrer" className="mrcpp-preview-link">Acessar mrcpp.vercel.app ↗</a>
                 </div>
               </div>
             </div>
           </Reveal>
         </div>
       </section>
-
-      {/* 05 — COMPETITIVA */}
       <section id="competitiva">
         <div id="projetos" />
         <div className="w">
           <Reveal>
             <div className="k">05 — competitiva</div>
             <h2>Programação <em>competitiva.</em></h2>
-            <p className="lead">
-              Extensões e utilitários criados para enriquecer o treinamento e a resolução de problemas em judges online.
-            </p>
+            <p className="lead">Extensões e utilitários criados para enriquecer o treinamento e a resolução de problemas em judges online.</p>
             <div className="chips">
               {FILTERS.map((f) => (
-                <button
-                  key={f}
-                  type="button"
-                  className={`chip ${f === filter ? 'on' : ''}`}
-                  onClick={() => setFilter(f)}
-                >
+                <button key={f} type="button" className={`chip ${f === filter ? 'on' : ''}`} onClick={() => setFilter(f)}>
                   {f === 'todos' ? 'Todos os projetos' : 'Programação Competitiva'}
                 </button>
               ))}
             </div>
-            <div className="grid">
+            <div className="two">
               {displayedRest.map((p, i) => (
                 <div key={p.slug} className="st" style={delay(i)}>
-                  <ProjectCard project={p} stats={stats[p.repo]} />
+                  <ProjectCard project={p} stats={stats[p.repo]} showStack={false} />
                 </div>
               ))}
             </div>
