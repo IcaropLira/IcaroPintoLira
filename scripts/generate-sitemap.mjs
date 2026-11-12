@@ -83,9 +83,7 @@ const body = urls.map((url) => {
   const images = [...(pageImages.get(url) ?? [])]
     .filter((file) => imageFiles.includes(file))
     .map((file) => {
-      const basename = path.posix.basename(file, path.posix.extname(file));
-      const caption = basename.replace(/[-_]+/g, ' ').replace(/\b\w/g, (letter) => letter.toUpperCase());
-      return `    <image:image><image:loc>${xml(`${SITE}/assets/${file.split('/').map(encodeURIComponent).join('/')}`)}</image:loc><image:caption>${xml(caption)}</image:caption></image:image>`;
+      return `    <image:image><image:loc>${xml(`${SITE}/assets/${file.split('/').map(encodeURIComponent).join('/')}`)}</image:loc></image:image>`;
     }).join('\n');
   return `  <url>\n    <loc>${SITE}${url}</loc>\n    <lastmod>${today}</lastmod>\n${images ? images + '\n' : ''}  </url>`;
 }).join('\n');
