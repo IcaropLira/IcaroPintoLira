@@ -19,16 +19,14 @@ export default function ProjectPage() {
     image: projectImage,
     imageAlt: project ? `Logo do projeto ${project.title}, desenvolvido por Ícaro Pinto Lira` : 'Ícaro Pinto Lira',
     structuredData: project ? {
-      '@type': 'SoftwareApplication',
+      '@type': 'CreativeWork',
       name: project.title,
       description: project.summary,
-      applicationCategory: 'DeveloperApplication',
-      operatingSystem: 'Web',
       url: project.website ?? `https://icaropintolira.vercel.app/projetos/${slug}`,
       image: `https://icaropintolira.vercel.app${projectImage}`,
       author: { '@id': 'https://icaropintolira.vercel.app/#person' },
       creator: { '@id': 'https://icaropintolira.vercel.app/#person' },
-      codeRepository: `https://github.com/${GITHUB_USER}/${project.repo}`,
+      sameAs: [`https://github.com/${GITHUB_USER}/${project.repo}`, ...(project.website ? [project.website] : [])],
       keywords: project.stack.join(', ')
     } : undefined
   });
