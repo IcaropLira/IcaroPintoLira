@@ -12,7 +12,12 @@ type Filter = 'todas' | AchievementCategory;
 const delay = (i: number) => ({ '--i': i }) as CSSProperties;
 
 export default function ConquistasHub() {
-  usePageTitle('Conquistas');
+  usePageTitle('Conquistas', {
+    path: '/conquistas',
+    description: 'Galeria de conquistas de Ícaro Pinto Lira: medalhas, competições de programação, certificados e marcos acadêmicos na UFCG.',
+    image: '/assets/conquistas/opi-palco.jpg',
+    imageAlt: 'Cerimônia de premiação da Olimpíada Paraibana de Informática 2026, com a equipe da UFCG'
+  });
   const [filter, setFilter] = useState<Filter>('todas');
 
   const featured = featuredAchievement();

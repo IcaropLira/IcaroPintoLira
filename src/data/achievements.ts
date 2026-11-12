@@ -40,7 +40,7 @@ export const achievements: Achievement[] = [
     summary:
       'Em equipe com Guilherme Jales Marinho e Henrique Souza Santos, representei a UFCG no Avançado Júnior da Olimpíada Paraibana de Informática e voltei do palco com a medalha de prata.',
     photo: 'opi-palco.jpg',
-    photoAlt: 'Equipe da UFCG no palco da OPI 2026, com medalhas e certificados, ao lado de dois professores',
+    photoAlt: 'Equipe Pensão de Pet II, da UFCG, no palco da premiação da Olimpíada Paraibana de Informática 2026',
     tags: ['OPI 2026', 'Avançado Júnior', 'Equipe de 3', 'UFCG'],
     year: 2026,
     dateLabel: 'Edição 2026',

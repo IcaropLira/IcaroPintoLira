@@ -36,7 +36,7 @@ function Hero() {
         <div className="avatar up" style={{ '--d': 0 } as CSSProperties}>
           <div className="orbit"><Sparkle size={18} /></div>
           <img src="/assets/icaro-pinto-lira.jpg" width={400} height={400} fetchPriority="high"
-            alt="Ícaro Pinto Lira, estudante de Ciência da Computação da UFCG" />
+            alt="Retrato de Ícaro Pinto Lira, estudante de Ciência da Computação da Universidade Federal de Campina Grande" />
         </div>
         <div className="tag up" style={{ '--d': 1 } as CSSProperties}>~/icaro $ whoami</div>
         <h1 className="up" style={{ '--d': 2 } as CSSProperties}>Ícaro <em>Pinto Lira</em></h1>
@@ -53,7 +53,12 @@ function Hero() {
 }
 
 export default function Home() {
-  usePageTitle('Ciência da Computação, UFCG');
+  usePageTitle('Início', {
+    path: '/',
+    description: 'Portfólio oficial de Ícaro Pinto Lira, estudante de Ciência da Computação na UFCG: projetos de software, programação competitiva, medalha na OPI 2026 e ferramentas autorais.',
+    image: '/assets/icaro-pinto-lira.jpg',
+    imageAlt: 'Retrato de Ícaro Pinto Lira, estudante de Ciência da Computação da UFCG'
+  });
   const stats = useRepoStats();
   const [filter, setFilter] = useState<Filter>('competitiva');
 

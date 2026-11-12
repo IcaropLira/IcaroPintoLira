@@ -33,11 +33,11 @@ const CATEGORIES = [
 ] as const;
 
 const PHOTOS: Photo[] = [
-  { src: 'opi-palco.jpg', w: 1280, h: 1280, alt: 'Equipe da UFCG no palco da OPI, com medalhas e certificados, ao lado de dois professores', caption: 'Recebendo a medalha no palco, com os certificados nas mãos' },
-  { src: 'opi-palco-lateral.jpg', w: 854, h: 1280, alt: 'A mesma cena do palco, vista de outro ângulo, com o painel de premiação ao fundo', caption: 'A cerimônia de premiação vista de outro ângulo' },
-  { src: 'opi-equipe.jpg', w: 886, h: 1182, alt: 'Três integrantes da equipe com medalhas e certificados, em frente a uma parede clara', caption: 'A equipe com as medalhas e os certificados' },
-  { src: 'opi-medalhistas.jpg', w: 1280, h: 720, alt: 'Oito medalhistas lado a lado, cada um com medalha no pescoço e certificado nas mãos', caption: 'Medalhistas reunidos depois da cerimônia' },
-  { src: 'opi-medalha.jpg', w: 852, h: 1280, alt: 'Retrato de um participante mostrando a medalha e o certificado, em frente ao painel da OPI', caption: 'Medalha e certificado, em frente ao painel da OPI' },
+  { src: 'opi-palco.jpg', w: 1280, h: 1280, alt: 'Equipe Pensão de Pet II, da UFCG, no palco da premiação da Olimpíada Paraibana de Informática 2026', caption: 'Recebendo a medalha no palco, com os certificados nas mãos' },
+  { src: 'opi-palco-lateral.jpg', w: 854, h: 1280, alt: 'Cerimônia de premiação da Olimpíada Paraibana de Informática 2026 vista de outro ângulo', caption: 'A cerimônia de premiação vista de outro ângulo' },
+  { src: 'opi-equipe.jpg', w: 886, h: 1182, alt: 'Equipe Pensão de Pet II reunida com medalhas e certificados após a OPI 2026', caption: 'A equipe com as medalhas e os certificados' },
+  { src: 'opi-medalhistas.jpg', w: 1280, h: 720, alt: 'Medalhistas da Olimpíada Paraibana de Informática 2026 reunidos após a cerimônia', caption: 'Medalhistas reunidos depois da cerimônia' },
+  { src: 'opi-medalha.jpg', w: 852, h: 1280, alt: 'Participante da OPI 2026 exibindo a medalha de prata e o certificado diante do painel oficial', caption: 'Medalha e certificado, em frente ao painel da OPI' },
 ];
 
 export default function OpiPage() {
