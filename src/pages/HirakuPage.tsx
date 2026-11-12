@@ -4,7 +4,6 @@ import ReleaseDownloads from '../components/ReleaseDownloads';
 import Reveal from '../components/Reveal';
 import Sparkle from '../components/Sparkle';
 import '../styles-hiraku.css';
-import { usePageTitle } from '../lib/usePageTitle';
 import { GITHUB_USER } from '../data/profile';
 import { formatSize, PLATFORM_LABEL, detectPlatform, pickRecommended, useLatestRelease } from '../lib/release';
 
@@ -98,12 +97,6 @@ function HeroDownload({ state }: { state: ReturnType<typeof useLatestRelease> })
 }
 
 export default function HirakuPage() {
-  usePageTitle('Hiraku Comic Manager', {
-    path: '/projetos/hiraku-comic-manager',
-    description: 'Hiraku Comic Manager, aplicativo de Ícaro Pinto Lira para organizar histórias em quadrinhos, personagens, capítulos, tramas, roteiros e relações em arquivos Markdown.',
-    image: '/assets/hiraku-comic-manager.png',
-    imageAlt: 'Ícone do Hiraku Comic Manager, aplicativo para organização e escrita de histórias em quadrinhos'
-  });
   const state = useLatestRelease(REPO);
 
   return (
