@@ -20,7 +20,7 @@ export default function ConquistaPage() {
       publisher: { '@id': 'https://icaropintolira.vercel.app/#person' },
       datePublished: '2026-08-08',
       image: [
-        { '@type': 'ImageObject', contentUrl: 'https://icaropintolira.vercel.app/assets/conquistas/opi-palco.jpg', caption: 'Equipe Pensão de Pet II no palco da premiação da OPI 2026', creator: { '@id': 'https://icaropintolira.vercel.app/#person' } },
+        { '@type': 'ImageObject', contentUrl: 'https://icaropintolira.vercel.app/assets/conquistas/opi-palco.jpg', caption: 'Equipe Pensão de Pet II no palco da premiação da OPI 2026' },
         { '@type': 'ImageObject', contentUrl: 'https://icaropintolira.vercel.app/assets/conquistas/opi-palco-lateral.jpg', caption: 'Cerimônia de premiação da Olimpíada Paraibana de Informática 2026 vista de outro ângulo', creator: { '@id': 'https://icaropintolira.vercel.app/#person' } },
         { '@type': 'ImageObject', contentUrl: 'https://icaropintolira.vercel.app/assets/conquistas/opi-equipe.jpg', caption: 'Equipe Pensão de Pet II reunida com as medalhas e certificados da OPI 2026', creator: { '@id': 'https://icaropintolira.vercel.app/#person' } },
         { '@type': 'ImageObject', contentUrl: 'https://icaropintolira.vercel.app/assets/conquistas/opi-medalhistas.jpg', caption: 'Medalhistas reunidos após a cerimônia da OPI 2026', creator: { '@id': 'https://icaropintolira.vercel.app/#person' } },
