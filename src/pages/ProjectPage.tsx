@@ -1,8 +1,11 @@
 import { Link, useParams } from 'react-router-dom';
+import LinuxInstallGuide from '../components/LinuxInstallGuide';
 import Markdown from '../components/Markdown';
+import ReleaseDownloads from '../components/ReleaseDownloads';
 import { categoryLabels, GITHUB_USER } from '../data/profile';
 import { useRepoStats } from '../lib/github';
 import { getProject } from '../lib/content';
+import { useLatestRelease } from '../lib/release';
 import { usePageTitle } from '../lib/usePageTitle';
 import HirakuPage from './HirakuPage';
 
@@ -10,6 +13,7 @@ export default function ProjectPage() {
   const { slug = '' } = useParams<{ slug: string }>();
   const project = getProject(slug);
   const stats = useRepoStats();
+  const release = useLatestRelease(project?.releases ? project.repo : '');
 
   const projectImage = project?.logo ? `/assets/${project.logo}` : '/assets/icaro-pinto-lira.jpg';
   usePageTitle(project?.title ?? 'Projeto não encontrado', {
@@ -45,10 +49,20 @@ export default function ProjectPage() {
           <div className="tags">{project.stack.map((t) => <span key={t}>{t}</span>)}</div>
           <div className="btns">
             {project.website && <a className="btn p" href={project.website} target="_blank" rel="noopener noreferrer">Acessar projeto ↗</a>}
-            <a className={`btn ${project.website ? '' : 'p'}`} href={`https://github.com/${GITHUB_USER}/${project.repo}`} target="_blank" rel="noopener noreferrer">Ver no GitHub ↗</a>
+            {project.releases && <a className="btn p" href="#baixar">{release.status === 'ok' ? `Baixar ${release.release.tag}` : 'Baixar'}</a>}
+            <a className={`btn ${project.website || project.releases ? '' : 'p'}`} href={`https://github.com/${GITHUB_USER}/${project.repo}`} target="_blank" rel="noopener noreferrer">Ver no GitHub ↗</a>
           </div>
         </div>
       </div>
+      {project.releases && (
+        <section id="baixar" className="proj-dl">
+          <div className="k">Download</div>
+          <h2>Baixe a <em>versão mais recente</em></h2>
+          <p className="lead">Os instaladores para Windows, macOS e Linux vêm direto da release mais nova do GitHub. Depois de instalado, o app se atualiza sozinho.</p>
+          <ReleaseDownloads state={release} releasesUrl={`https://github.com/${GITHUB_USER}/${project.repo}/releases/latest`} />
+          <LinuxInstallGuide state={release} appName={project.title} packageName={project.packageName ?? project.repo.toLowerCase()} dnfRepo={project.dnfRepo} />
+        </section>
+      )}
       <Markdown>{project.body}</Markdown>
     </article>
   );

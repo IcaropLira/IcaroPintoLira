@@ -32,6 +32,9 @@ function toProject(path: string, src: string): Project {
     stack: (data.stack ?? '').split(',').map((s) => s.trim()).filter(Boolean),
     body,
     website: data.website || undefined,
+    releases: data.releases === 'true',
+    dnfRepo: data.dnf_repo || undefined,
+    packageName: data.package || undefined,
   };
 }
 

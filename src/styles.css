@@ -128,3 +128,24 @@ h2{margin-bottom:14px}
 .mrcpp-preview-link{display:inline-flex;align-items:center;justify-content:center;gap:6px;font:12px 'Fira Code',monospace;color:#fff;background:var(--grad);padding:8px 14px;border-radius:8px;text-align:center;margin-top:8px;transition:.2s}
 .mrcpp-preview-link:hover{transform:translateY(-2px);box-shadow:0 4px 15px rgba(238,15,127,.4)}
 @media(max-width:900px){.mrcpp-banner{grid-template-columns:1fr;padding:26px}}
+/* Download na página do projeto (frontmatter releases: true) */
+.proj-dl{margin:10px 0 44px;padding-top:10px}
+.proj-dl h2{font-size:34px;margin:4px 0 8px}.proj-dl h2 em{font-style:italic;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.proj-dl .lead{color:var(--mut);max-width:680px;margin-bottom:20px}
+.ig{margin-top:28px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px}
+.ig h3{font-size:22px;margin:0 0 14px}.ig h3 span{font:400 14px 'Inter',sans-serif;color:var(--mut)}
+.ig h3:not(:first-child){margin-top:28px}
+.ig code{font:13px 'Fira Code',monospace;background:#ffffff0d;padding:2px 6px;border-radius:6px}
+.ig a{color:var(--pk2);text-decoration:underline;word-break:break-all}
+.ig-p{color:var(--mut);font-size:14px;margin-bottom:10px}
+.ig-steps{list-style:none;padding:0;margin:0;counter-reset:ig;display:flex;flex-direction:column;gap:18px}
+.ig-steps li{counter-increment:ig;position:relative;padding-left:44px}
+.ig-steps li::before{content:counter(ig);position:absolute;left:0;top:0;width:30px;height:30px;border-radius:50%;background:var(--grad);color:#fff;display:grid;place-items:center;font:600 14px 'Inter',sans-serif}
+.ig-steps b{display:block;font-size:16px;margin-bottom:2px}
+.ig-steps p{color:var(--mut);font-size:14px;margin-bottom:8px}
+.ig-cmd{position:relative}
+.ig-cmd pre{line-height:1.5;background:#0d0a16;border:1px solid var(--line);border-radius:12px;padding:14px 86px 14px 16px;overflow-x:auto;margin:0}
+.ig-cmd pre code{display:block;background:0;padding:0;font-size:13px;line-height:1.5;white-space:pre}
+.ig-cmd button{position:absolute;top:10px;right:10px;border:1px solid var(--line);background:#ffffff0d;color:var(--tx);border-radius:8px;padding:4px 10px;font:12px 'Fira Code',monospace;cursor:pointer}
+.ig-cmd button:hover{border-color:var(--pk2)}
+@media(max-width:600px){.ig{padding:18px 14px}.ig-cmd pre{padding:40px 14px 14px}.ig-steps li{padding-left:40px}.proj-dl h2{font-size:28px}}
