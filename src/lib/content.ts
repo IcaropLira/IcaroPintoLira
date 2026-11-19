@@ -35,6 +35,8 @@ function toProject(path: string, src: string): Project {
     releases: data.releases === 'true',
     dnfRepo: data.dnf_repo || undefined,
     packageName: data.package || undefined,
+    chrome: data.chrome || undefined,
+    firefox: data.firefox || undefined,
   };
 }
 
