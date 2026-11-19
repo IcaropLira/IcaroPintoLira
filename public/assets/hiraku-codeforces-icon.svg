@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="Hiraku Codeforces">
+  <title>Hiraku Codeforces</title>
+  <defs>
+    <linearGradient id="g" gradientUnits="userSpaceOnUse" x1="0" y1="40" x2="0" y2="216">
+      <stop offset="0" stop-color="#ee0f7f"/>
+      <stop offset="0.4" stop-color="#ff8db8"/>
+      <stop offset="0.68" stop-color="#d4a2c8"/>
+      <stop offset="1" stop-color="#3b2477"/>
+    </linearGradient>
+    <!-- as linhas de texto são "recortadas" das páginas -->
+    <mask id="cut">
+      <rect width="256" height="256" fill="#fff"/>
+      <g stroke="#000" stroke-width="8" stroke-linecap="round">
+        <line x1="62" y1="98" x2="94" y2="106"/>
+        <line x1="62" y1="124" x2="88" y2="130"/>
+        <line x1="62" y1="150" x2="94" y2="158"/>
+        <line x1="194" y1="124" x2="168" y2="130"/>
+        <line x1="194" y1="150" x2="162" y2="158"/>
+      </g>
+    </mask>
+  </defs>
+  <rect width="256" height="256" rx="56" fill="#1a1230"/>
+  <g fill="url(#g)" mask="url(#cut)">
+    <!-- página esquerda: o enunciado -->
+    <path d="M44,52 L108,72 L108,184 L44,204 Z"/>
+    <!-- página direita: a tradução -->
+    <path d="M212,52 L148,72 L148,184 L212,204 Z"/>
+  </g>
+  <!-- linha traduzida: acende em branco -->
+  <line x1="194" y1="98" x2="162" y2="106" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+  <!-- a luz que aparece quando o livro "abre" (開, hiraku) -->
+  <g fill="url(#g)">
+    <path d="M128,62 Q131.5,122 143,128 Q131.5,134 128,194 Q124.5,134 113,128 Q124.5,122 128,62 Z"/>
+    <path d="M206,20 Q207.4,32.6 218,34 Q207.4,35.4 206,48 Q204.6,35.4 194,34 Q204.6,32.6 206,20 Z"/>
+    <circle cx="46" cy="30" r="4.5"/>
+  </g>
+</svg>

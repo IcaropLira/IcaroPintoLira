@@ -29,7 +29,10 @@ export default function ProjectPage() {
       image: `https://icaropintolira.vercel.app${projectImage}`,
       author: { '@id': 'https://icaropintolira.vercel.app/#person' },
       creator: { '@id': 'https://icaropintolira.vercel.app/#person' },
-      sameAs: [`https://github.com/${GITHUB_USER}/${project.repo}`, ...(project.website ? [project.website] : [])],
+      sameAs: [
+        `https://github.com/${GITHUB_USER}/${project.repo}`,
+        ...[project.website, project.chrome, project.firefox].filter((u): u is string => !!u)
+      ],
       keywords: project.stack.join(', ')
     } : undefined
   });
@@ -49,8 +52,10 @@ export default function ProjectPage() {
           <div className="tags">{project.stack.map((t) => <span key={t}>{t}</span>)}</div>
           <div className="btns">
             {project.website && <a className="btn p" href={project.website} target="_blank" rel="noopener noreferrer">Acessar projeto ↗</a>}
+            {project.chrome && <a className="btn p" href={project.chrome} target="_blank" rel="noopener noreferrer">Instalar no Chrome ↗</a>}
+            {project.firefox && <a className="btn p" href={project.firefox} target="_blank" rel="noopener noreferrer">Instalar no Firefox ↗</a>}
             {project.releases && <a className="btn p" href="#baixar">{release.status === 'ok' ? `Baixar ${release.release.tag}` : 'Baixar'}</a>}
-            <a className={`btn ${project.website || project.releases ? '' : 'p'}`} href={`https://github.com/${GITHUB_USER}/${project.repo}`} target="_blank" rel="noopener noreferrer">Ver no GitHub ↗</a>
+            <a className={`btn ${project.website || project.releases || project.chrome || project.firefox ? '' : 'p'}`} href={`https://github.com/${GITHUB_USER}/${project.repo}`} target="_blank" rel="noopener noreferrer">Ver no GitHub ↗</a>
           </div>
         </div>
       </div>

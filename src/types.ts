@@ -19,6 +19,10 @@ export interface Project {
   dnfRepo?: string;
   /** Nome do pacote no dnf e do binário instalado. */
   packageName?: string;
+  /** Página na Chrome Web Store (extensões). */
+  chrome?: string;
+  /** Página no Firefox Add-ons (extensões). */
+  firefox?: string;
 }
 
 export interface RepoStats {

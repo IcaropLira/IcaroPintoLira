@@ -13,7 +13,7 @@ Site pessoal em React + TypeScript (Vite). O conteúdo vive em arquivos Markdown
 - `content/about.md`: texto do topo.
 - `content/projects/*.md`: um arquivo por projeto; o corpo vira a página completa em `/projetos/<slug>`.
 
-Frontmatter: `title`, `summary`, `category` (setup | apps | competitiva), `repo`, `logo` (arquivo em `public/assets`), `featured` (true/false), `order`, `stack`.
+Frontmatter: `title`, `summary`, `category` (setup | apps | competitiva), `repo`, `logo` (arquivo em `public/assets`), `featured` (true/false), `order`, `stack`; para extensões, `chrome` e `firefox` (links das lojas, viram botões "Instalar").
 Para tirar um projeto da home, use `featured: false`. Para criar um novo, crie um `.md`; nenhum código muda.
 
 ## Deploy
