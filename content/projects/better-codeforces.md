@@ -1,9 +1,9 @@
 ---
-title: Better Codeforces
+title: Hiraku Codeforces
 summary: Melhorias para quem treina no Codeforces.
 category: competitiva
 repo: BetterCodeforces
-logo: 
+logo: hiraku-codeforces-icon.svg
 featured: true
 order: 8
 stack: JavaScript
