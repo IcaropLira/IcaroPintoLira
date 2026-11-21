@@ -2,109 +2,82 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://icaropintolira.vercel.app/</loc>
-    <lastmod>2026-11-21</lastmod>
-    <image:image><image:loc>https://icaropintolira.vercel.app/assets/conquistas/opi-palco.jpg</image:loc></image:image>
-    <image:image><image:loc>https://icaropintolira.vercel.app/assets/hiraku-codeforces-icon.svg</image:loc></image:image>
-    <image:image><image:loc>https://icaropintolira.vercel.app/assets/hiraku-codeforces/banner.png</image:loc></image:image>
-    <image:image><image:loc>https://icaropintolira.vercel.app/assets/hiraku-codeforces/popup.png</image:loc></image:image>
-    <image:image><image:loc>https://icaropintolira.vercel.app/assets/hiraku-comic-manager.png</image:loc></image:image>
-    <image:image><image:loc>https://icaropintolira.vercel.app/assets/hmideas-icon.svg</image:loc></image:image>
-    <image:image><image:loc>https://icaropintolira.vercel.app/assets/hmideas-logo.svg</image:loc></image:image>
-    <image:image><image:loc>https://icaropintolira.vercel.app/assets/hsm-logo.svg</image:loc></image:image>
     <image:image><image:loc>https://icaropintolira.vercel.app/assets/icaro-pinto-lira.jpg</image:loc></image:image>
-    <image:image><image:loc>https://icaropintolira.vercel.app/assets/mrcpp-icon.svg</image:loc></image:image>
-    <image:image><image:loc>https://icaropintolira.vercel.app/assets/mrcpp-logo.svg</image:loc></image:image>
-    <image:image><image:loc>https://icaropintolira.vercel.app/assets/neovim-icon.svg</image:loc></image:image>
-    <image:image><image:loc>https://icaropintolira.vercel.app/assets/neovim-logo.svg</image:loc></image:image>
-    <image:image><image:loc>https://icaropintolira.vercel.app/assets/sketchquest-logo.svg</image:loc></image:image>
-    <image:image><image:loc>https://icaropintolira.vercel.app/assets/terminal-icon.svg</image:loc></image:image>
-    <image:image><image:loc>https://icaropintolira.vercel.app/assets/terminal-logo.svg</image:loc></image:image>
-    <image:image><image:loc>https://icaropintolira.vercel.app/assets/tmux-icon.svg</image:loc></image:image>
-    <image:image><image:loc>https://icaropintolira.vercel.app/assets/tmux-logo.svg</image:loc></image:image>
-    <image:image><image:loc>https://icaropintolira.vercel.app/assets/vim-icon.svg</image:loc></image:image>
+    <image:image><image:loc>https://icaropintolira.vercel.app/assets/hsm-logo.svg</image:loc></image:image>
+    <image:image><image:loc>https://icaropintolira.vercel.app/assets/conquistas/opi-palco.jpg</image:loc></image:image>
     <image:image><image:loc>https://icaropintolira.vercel.app/assets/vim-logo.svg</image:loc></image:image>
+    <image:image><image:loc>https://icaropintolira.vercel.app/assets/neovim-logo.svg</image:loc></image:image>
+    <image:image><image:loc>https://icaropintolira.vercel.app/assets/terminal-logo.svg</image:loc></image:image>
+    <image:image><image:loc>https://icaropintolira.vercel.app/assets/sketchquest-logo.svg</image:loc></image:image>
+    <image:image><image:loc>https://icaropintolira.vercel.app/assets/tmux-logo.svg</image:loc></image:image>
+    <image:image><image:loc>https://icaropintolira.vercel.app/assets/hiraku-comic-manager.png</image:loc></image:image>
+    <image:image><image:loc>https://icaropintolira.vercel.app/assets/hmideas-logo.svg</image:loc></image:image>
+    <image:image><image:loc>https://icaropintolira.vercel.app/assets/mrcpp-logo.svg</image:loc></image:image>
+    <image:image><image:loc>https://icaropintolira.vercel.app/assets/hiraku-codeforces-icon.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://icaropintolira.vercel.app/conquistas</loc>
-    <lastmod>2026-11-21</lastmod>
     <image:image><image:loc>https://icaropintolira.vercel.app/assets/conquistas/opi-palco.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://icaropintolira.vercel.app/conquistas/opi-2026</loc>
-    <lastmod>2026-11-21</lastmod>
-    <image:image><image:loc>https://icaropintolira.vercel.app/assets/conquistas/opi-equipe.jpg</image:loc></image:image>
-    <image:image><image:loc>https://icaropintolira.vercel.app/assets/conquistas/opi-medalha.jpg</image:loc></image:image>
-    <image:image><image:loc>https://icaropintolira.vercel.app/assets/conquistas/opi-medalhistas.jpg</image:loc></image:image>
-    <image:image><image:loc>https://icaropintolira.vercel.app/assets/conquistas/opi-palco-lateral.jpg</image:loc></image:image>
     <image:image><image:loc>https://icaropintolira.vercel.app/assets/conquistas/opi-palco.jpg</image:loc></image:image>
-  </url>
-  <url>
-    <loc>https://icaropintolira.vercel.app/projetos/better-codeforces</loc>
-    <lastmod>2026-11-21</lastmod>
-    <image:image><image:loc>https://icaropintolira.vercel.app/assets/hiraku-codeforces-icon.svg</image:loc></image:image>
-  </url>
-  <url>
-    <loc>https://icaropintolira.vercel.app/projetos/better-polygon-codeforces</loc>
-    <lastmod>2026-11-21</lastmod>
-  </url>
-  <url>
-    <loc>https://icaropintolira.vercel.app/projetos/hiraku-comic-manager</loc>
-    <lastmod>2026-11-21</lastmod>
-    <image:image><image:loc>https://icaropintolira.vercel.app/assets/hiraku-comic-manager.png</image:loc></image:image>
-    <image:image><image:loc>https://icaropintolira.vercel.app/assets/hiraku/ficha-layout.png</image:loc></image:image>
-    <image:image><image:loc>https://icaropintolira.vercel.app/assets/hiraku/grafo.png</image:loc></image:image>
-    <image:image><image:loc>https://icaropintolira.vercel.app/assets/hiraku/matriz.png</image:loc></image:image>
-    <image:image><image:loc>https://icaropintolira.vercel.app/assets/hiraku/roteiro-layout.png</image:loc></image:image>
-    <image:image><image:loc>https://icaropintolira.vercel.app/assets/hiraku/timeline.png</image:loc></image:image>
+    <image:image><image:loc>https://icaropintolira.vercel.app/assets/conquistas/opi-palco-lateral.jpg</image:loc></image:image>
+    <image:image><image:loc>https://icaropintolira.vercel.app/assets/conquistas/opi-equipe.jpg</image:loc></image:image>
+    <image:image><image:loc>https://icaropintolira.vercel.app/assets/conquistas/opi-medalhistas.jpg</image:loc></image:image>
+    <image:image><image:loc>https://icaropintolira.vercel.app/assets/conquistas/opi-medalha.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://icaropintolira.vercel.app/projetos/hiraku-setup</loc>
-    <lastmod>2026-11-21</lastmod>
     <image:image><image:loc>https://icaropintolira.vercel.app/assets/hsm-logo.svg</image:loc></image:image>
   </url>
   <url>
+    <loc>https://icaropintolira.vercel.app/projetos/vim</loc>
+    <image:image><image:loc>https://icaropintolira.vercel.app/assets/vim-logo.svg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://icaropintolira.vercel.app/projetos/neovim</loc>
+    <image:image><image:loc>https://icaropintolira.vercel.app/assets/neovim-logo.svg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://icaropintolira.vercel.app/projetos/terminal</loc>
+    <image:image><image:loc>https://icaropintolira.vercel.app/assets/terminal-logo.svg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://icaropintolira.vercel.app/projetos/sketchquest</loc>
+    <image:image><image:loc>https://icaropintolira.vercel.app/assets/sketchquest-logo.svg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://icaropintolira.vercel.app/projetos/tmux</loc>
+    <image:image><image:loc>https://icaropintolira.vercel.app/assets/tmux-logo.svg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://icaropintolira.vercel.app/projetos/hiraku-comic-manager</loc>
+    <image:image><image:loc>https://icaropintolira.vercel.app/assets/hiraku-comic-manager.png</image:loc></image:image>
+    <image:image><image:loc>https://icaropintolira.vercel.app/assets/hiraku/grafo.png</image:loc></image:image>
+    <image:image><image:loc>https://icaropintolira.vercel.app/assets/hiraku/matriz.png</image:loc></image:image>
+    <image:image><image:loc>https://icaropintolira.vercel.app/assets/hiraku/timeline.png</image:loc></image:image>
+    <image:image><image:loc>https://icaropintolira.vercel.app/assets/hiraku/ficha-layout.png</image:loc></image:image>
+    <image:image><image:loc>https://icaropintolira.vercel.app/assets/hiraku/roteiro-layout.png</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://icaropintolira.vercel.app/projetos/hmideas</loc>
-    <lastmod>2026-11-21</lastmod>
-    <image:image><image:loc>https://icaropintolira.vercel.app/assets/hmideas-icon.svg</image:loc></image:image>
     <image:image><image:loc>https://icaropintolira.vercel.app/assets/hmideas-logo.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://icaropintolira.vercel.app/projetos/mrcpp</loc>
-    <lastmod>2026-11-21</lastmod>
-    <image:image><image:loc>https://icaropintolira.vercel.app/assets/mrcpp-icon.svg</image:loc></image:image>
     <image:image><image:loc>https://icaropintolira.vercel.app/assets/mrcpp-logo.svg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://icaropintolira.vercel.app/projetos/neovim</loc>
-    <lastmod>2026-11-21</lastmod>
-    <image:image><image:loc>https://icaropintolira.vercel.app/assets/neovim-icon.svg</image:loc></image:image>
-    <image:image><image:loc>https://icaropintolira.vercel.app/assets/neovim-logo.svg</image:loc></image:image>
+    <loc>https://icaropintolira.vercel.app/projetos/better-codeforces</loc>
+    <image:image><image:loc>https://icaropintolira.vercel.app/assets/hiraku-codeforces-icon.svg</image:loc></image:image>
+    <image:image><image:loc>https://icaropintolira.vercel.app/assets/hiraku-codeforces/banner.png</image:loc></image:image>
+    <image:image><image:loc>https://icaropintolira.vercel.app/assets/hiraku-codeforces/popup.png</image:loc></image:image>
   </url>
   <url>
-    <loc>https://icaropintolira.vercel.app/projetos/sketchquest</loc>
-    <lastmod>2026-11-21</lastmod>
-    <image:image><image:loc>https://icaropintolira.vercel.app/assets/sketchquest-logo.svg</image:loc></image:image>
-  </url>
-  <url>
-    <loc>https://icaropintolira.vercel.app/projetos/terminal</loc>
-    <lastmod>2026-11-21</lastmod>
-    <image:image><image:loc>https://icaropintolira.vercel.app/assets/terminal-icon.svg</image:loc></image:image>
-    <image:image><image:loc>https://icaropintolira.vercel.app/assets/terminal-logo.svg</image:loc></image:image>
-  </url>
-  <url>
-    <loc>https://icaropintolira.vercel.app/projetos/tmux</loc>
-    <lastmod>2026-11-21</lastmod>
-    <image:image><image:loc>https://icaropintolira.vercel.app/assets/tmux-icon.svg</image:loc></image:image>
-    <image:image><image:loc>https://icaropintolira.vercel.app/assets/tmux-logo.svg</image:loc></image:image>
+    <loc>https://icaropintolira.vercel.app/projetos/better-polygon-codeforces</loc>
   </url>
   <url>
     <loc>https://icaropintolira.vercel.app/projetos/tradutor-judges</loc>
-    <lastmod>2026-11-21</lastmod>
-  </url>
-  <url>
-    <loc>https://icaropintolira.vercel.app/projetos/vim</loc>
-    <lastmod>2026-11-21</lastmod>
-    <image:image><image:loc>https://icaropintolira.vercel.app/assets/vim-icon.svg</image:loc></image:image>
-    <image:image><image:loc>https://icaropintolira.vercel.app/assets/vim-logo.svg</image:loc></image:image>
   </url>
 </urlset>
